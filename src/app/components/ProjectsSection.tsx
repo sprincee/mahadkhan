@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Code2, ExternalLink, Github, Calendar, Sparkles } from 'lucide-react';
+import { ExternalLink, Github, Calendar, Sparkles } from 'lucide-react';
 
 const ProjectsSection = () => {
   const [isVisible, setIsVisible] = useState(false);

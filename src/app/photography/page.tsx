@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Navigation from '../components/Navigation';
-import { Camera, PenTool, ArrowRight, Sparkles } from 'lucide-react';
+import { Camera, PenTool, Sparkles } from 'lucide-react';
 
 const CreativeProjectsPage = () => {
   const [isVisible, setIsVisible] = useState(false);

@@ -5,7 +5,7 @@ import { ExternalLink, Github, Calendar, Sparkles } from 'lucide-react';
 
 const ProjectsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [hoveredProject, setHoveredProject] = useState(null);
+  const [hoveredProject, setHoveredProject] = useState<number | null>(null);
   const [hasScrolled, setHasScrolled] = useState(false);
 
   const scrollOffset = 50;
@@ -37,7 +37,20 @@ const ProjectsSection = () => {
     return () => observer.disconnect();
   }, [hasScrolled, scrollOffset]);
 
-  const projects = [
+  type Project = {
+    id: number;
+    title: string;
+    date: string;
+    description: string;
+    longDescription: string;
+    tech: string[];
+    features: string[];
+    github: string;
+    live: string | null;
+    color: 'blue' | 'orange' | 'green' | 'purple';
+  };
+
+  const projects: Project[] = [
     {
       id: 1,
       title: 'PoliView',
@@ -82,7 +95,7 @@ const ProjectsSection = () => {
         'Student progress tracking',
         'Community-focused design'
       ],
-      github: 'https://github.com/sprincee/QuranQuest', // Placeholder
+      github: 'https://github.com/sprincee/QuranQuest', 
       live: null,
       color: 'green'
     },
@@ -99,13 +112,13 @@ const ProjectsSection = () => {
         'Visual assets created with Blockbench',
         'GitHub not available.'
       ],
-      github: 'https://github.com/sprincee', // Placeholder
+      github: 'https://github.com/sprincee', 
       live: null,
       color: 'purple'
     }
   ];
 
-  const getColorClasses = (color) => {
+  const getColorClasses = (color: 'blue' | 'orange' | 'green' | 'purple') => {
     const colors = {
       blue: {
         bg: 'bg-blue-500/10',
@@ -136,8 +149,9 @@ const ProjectsSection = () => {
         glow: 'rgba(168, 85, 247, 0.5)'
       }
     };
-    return colors[color] || colors.blue;
+    return colors[color];
   };
+  
 
   return (
     <section id="projects" className="min-h-screen bg-black relative overflow-hidden pt-20">

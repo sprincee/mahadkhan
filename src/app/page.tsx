@@ -6,7 +6,6 @@ import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import ContactSection from './components/ContactSection';
 import BackgroundElements from './components/BackgroundElements';
-import SharedEffects from './components/SharedEffects';
 
 const LandingPage = () => {
   return (

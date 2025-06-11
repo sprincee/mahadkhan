@@ -8,10 +8,8 @@ import ProjectsSection from '../components/ProjectsSection';
 const ProjectsPage = () => {
   return (
     <div className="min-h-screen bg-black relative">
-      {/* Navigation - Fixed at top */}
       <Navigation />
       
-      {/* Projects Section */}
       <ProjectsSection />
     </div>
   );

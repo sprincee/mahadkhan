@@ -103,7 +103,7 @@ const CreativeProjectsPage = () => {
                 <h3 className="text-xl font-bold text-white">Writing</h3>
               </div>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Thoughts on technology, creativity, and the intersection where innovation meets imagination.
+                Thoughts on technology, creativity, philosophy, or whatever is on my mind.
               </p>
             </div>
           </div>

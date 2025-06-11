@@ -8,7 +8,6 @@ const ProjectsSection = () => {
   const [hoveredProject, setHoveredProject] = useState(null);
   const [hasScrolled, setHasScrolled] = useState(false);
 
-  // Adjustable scroll offset (change this to scroll more or less)
   const scrollOffset = 50;
 
   useEffect(() => {
@@ -51,8 +50,8 @@ const ProjectsSection = () => {
         'User-friendly interface for civic engagement',
         'Integration with official Congress.gov data'
       ],
-      github: '#', // Placeholder
-      live: '#', // Placeholder
+      github: 'https://github.com/sprincee/politcalview',
+      live: 'https://politcalview.vercel.app', 
       color: 'blue'
     },
     {
@@ -67,8 +66,8 @@ const ProjectsSection = () => {
         'Firebase Authentication for secure access',
         'Responsive UI with Tailwind CSS'
       ],
-      github: '#', // Placeholder
-      live: '#', // Placeholder
+      github: 'https://github.com/sprincee/Flame3', 
+      live: 'https://flame3.vercel.app', 
       color: 'orange'
     },
     {
@@ -83,7 +82,7 @@ const ProjectsSection = () => {
         'Student progress tracking',
         'Community-focused design'
       ],
-      github: '#', // Placeholder
+      github: 'https://github.com/sprincee/QuranQuest', // Placeholder
       live: null,
       color: 'green'
     },
@@ -97,9 +96,10 @@ const ProjectsSection = () => {
       features: [
         'Custom enchantment mechanics',
         'Multiplayer server compatibility',
-        'Visual assets created with Blockbench'
+        'Visual assets created with Blockbench',
+        'GitHub not available.'
       ],
-      github: '#', // Placeholder
+      github: 'https://github.com/sprincee', // Placeholder
       live: null,
       color: 'purple'
     }
@@ -271,7 +271,7 @@ const ProjectsSection = () => {
               Interested in seeing more? Check out my GitHub for additional projects and contributions.
             </p>
             <a
-              href="#" // Replace with your GitHub profile
+              href="https://github.com/sprincee" 
               className="inline-flex items-center space-x-2 px-6 py-3 bg-blue-500/10 rounded-lg border border-blue-500/20 hover:border-blue-500/40 hover:bg-blue-500/20 transition-all duration-300 group"
             >
               <Github className="w-5 h-5 text-blue-400" />

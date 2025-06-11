@@ -80,7 +80,7 @@ const AboutSection = () => {
               </div>
 
               <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
-                Software engineer passionate about building scalable web applications and crafting exceptional
+                A student passionate about building scalable web applications and crafting exceptional
                 user experiences. I thrive at the intersection of design and development, where creativity meets
                 technical excellence.
               </p>
